@@ -1,0 +1,13 @@
+<h1>The paragraph contain {{count}} words</h1>
+<a href="{% url 'home' %}"> Start over </a>
+<h2>Your paragraph </h2>
+{{fulltext}}
+<br />
+<br />
+
+{% for word, counttotal in sortedwords %}
+
+{{word}}: {{counttotal}}
+<br />
+
+{% endfor %}
